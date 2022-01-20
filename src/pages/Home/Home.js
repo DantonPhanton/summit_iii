@@ -61,6 +61,22 @@ export default function Home(props) {
         )
     }
 
+    
+    const onSignOutPress = () => {
+	firebase
+            .auth()
+            .signOut()
+            .then(() => {
+                const uid = null
+                const usersRef = null
+                const user = null
+                props.navigation.navigate('Login')
+            })
+            .catch(error => {
+                alert(error)
+	})
+    }
+
     return (
         <View style={styles.container}>
             <View style={styles.formContainer}>
@@ -87,6 +103,11 @@ export default function Home(props) {
                     />
                 </View>
             )}
+            <TouchableOpacity
+                 style={styles.button}
+                 onPress={() => onSignOutPress()}>
+                 <Text style={styles.buttonTitle}>Sign Out</Text>
+            </TouchableOpacity>
         </View>
     )
 }
