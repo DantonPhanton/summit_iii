@@ -16,6 +16,6 @@ A place to develop Summit III features
   - Run on iOS simulator and Android device/emulator has not been implemented yet
 
 If there are any issues with npm (step 3) consider installing yarn:
-`npm install --global yarn` to install yarn (yarn is a package manager similar to npm)
-`yarn global add expo-cli` to install the expo CLI
-`yarn install` to install dependencies for the project
+- `npm install --global yarn` to install yarn (yarn is a package manager similar to npm)
+- `yarn global add expo-cli` to install the expo CLI
+- `yarn install` to install dependencies for the project
